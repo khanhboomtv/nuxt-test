@@ -1,5 +1,8 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  server: {
+    port: process.env.APP_PORT || 8080,
+  },
   head: {
     title: 'nuxt-test',
     htmlAttrs: {
