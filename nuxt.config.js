@@ -1,6 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   server: {
+    host: process.env.APP_HOST || '0.0.0.0',
     port: process.env.APP_PORT || 8080,
   },
   head: {
@@ -34,4 +35,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  target: 'server',
 }
